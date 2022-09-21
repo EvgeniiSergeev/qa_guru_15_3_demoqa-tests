@@ -23,11 +23,12 @@ public class TextBoxTests {
     void fillFormTest() {
         String name = "Egor";
 
-        open("/text-box");
- //       $("[id=userName]").setValue("Egor");
-        $("#userName").setValue(name);
+        open("automation-practice-form");
+ //       $("[id="firstName"]").setValue("Egor");
+        $("#firstName").setValue(name);
+        $("#lastName").setValue("Egorov");
         $("#userEmail").setValue("Egor@egor.com");
-        $("#currentAddress").setValue("Some address 1");
+        $("#userNumber").setValue("7 777 77 77");
         $("#permanentAddress").setValue("Another address 1");
         $("#submit").click();
 
