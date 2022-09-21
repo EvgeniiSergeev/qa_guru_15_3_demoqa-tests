@@ -25,7 +25,7 @@ public class TextBoxTests {
 
         open("/text-box");
  //       $("[id=userName]").setValue("Egor");
-        $("#userName").setValue("Egor");
+        $("#userName").setValue(name);
         $("#userEmail").setValue("Egor@egor.com");
         $("#currentAddress").setValue("Some address 1");
         $("#permanentAddress").setValue("Another address 1");
