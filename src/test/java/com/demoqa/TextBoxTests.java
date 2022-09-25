@@ -25,11 +25,9 @@ public class TextBoxTests {
 
     @Test
     void fillFormTest() {
-        String name = "Egor";
 
         open("/automation-practice-form");
-        //       $("[id="firstName"]").setValue("Egor");
-        $("#firstName").setValue(name);
+        $("#firstName").setValue("Egor");
         $("#lastName").setValue("Egorov");
         $("#userEmail").setValue("Egor@egor.com");
         $("#genterWrapper").$(byText("Male")).click();
@@ -47,7 +45,7 @@ public class TextBoxTests {
         $("#submit").click();
 
         $(".table-responsive").shouldHave(text("Egor Egorov"),
-                text("Ivan.Petrov@test.com"),
+                text("Egor@egor.com"),
                 text("Male"),
                 text("11231231212"),
                 text("3 September,1988"),
